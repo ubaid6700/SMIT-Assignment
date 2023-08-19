@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="body">
+        <div class="main">
+            <input type="button" value="C" onclick="maincontroll.textContent = ``; mainanswer.textContent = ` `" style="width: 6vw; height: 6vh; background-color: paleturquoise; color:antiquewhite;font-weight: bold; font-size: 2vw; border: none; position: absolute; top: 90vh; left: 1vw;box-shadow: .5vw 1vw 1vw rgba(0,0,0, 80%);">
+            <input type="button" value="Open" onclick="openfunction()" style="width: 6vw; height: 6vh; background-color: paleturquoise; color:antiquewhite;font-weight: bold; font-size: 2vw; border: none; position: absolute; top: 45vh; left: 1vw;box-shadow: .5vw 1vw 1vw rgba(0, 0, 0, 0.8);">
+            <input type="button" value="Close" onclick="closefunction()" style="width: 6vw; height: 6vh; background-color: paleturquoise; color:antiquewhite;font-weight: bold; font-size: 2vw; border: none; position: absolute; top: 1vh; left: 1vw;box-shadow: .5vw 1vw 1vw rgba(0,0,0, 80%);">
+            <div id="cover"><h1>Assingment</h1></div>
+            <table id="relative">
+                <div id="band">
+                    <tr class="upper">
+                        <td id="maincontroll"></td>
+                    </tr>
+                    <tr class="upper">
+                        <td id="mainanswer">00</td>
+                    </tr>
+                </div>
+                <tr>
+                    <td>
+                            <button id="seven" class="btn maximumColor">07</button>
+                        </td>
+                        <td>
+                            <button id="eight" class="btn chota">08</button>
+                        </td>
+                        <td>
+                            <button id="nine" class="btn">09</button>
+                        </td>
+                        <td>
+                            <button id="multiply" class="btn integers"> * </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <button id="four" class="btn maximumColor">04</button>
+                        </td>
+                        <td>
+                            <button id="five" class="btn chota">05</button>
+                        </td>
+                        <td>
+                            <button id="six" class="btn">06</button>
+                        </td>
+                        <td>
+                            <button id="divide" class="btn integers"> / </button>
+                        </td>
+                        
+                    </tr>
+                    <tr>
+                        <td colspan="1">
+                            <button id="one" class="btn maximumColor">01</button>
+                        </td>
+                        <td colspan="1">
+                            <button id="two" class="btn chota">02</button>
+                        </td>
+                        <td colspan="1">
+                            <button id="three" class="btn">03</button>
+                        </td>
+                        <td colspan="1">
+                            <button id="plus" class="btn integers"> + </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="1">
+                            <button id="zero" class="btn maximumColor">0</button>
+                        </td>
+                        <td colspan="1">
+                            <button id="dot" class="btn chota">.</button>
+                        </td>
+                        <td colspan="1">
+                            <button id="equalsign" id="equalsign"> = </button>
+                        </td>
+                        <td colspan="1">
+                            <button id="minus" class="btn integers">-</button>
+                        </td>
+                    </tr>
+                    <div class="andarkasaman"></div>
+                </table>
+        </div>
+    </div>
+    
+
+
+    <script src="app.js"></script>
+    <!-- my github code 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 -->
+</body>
+</html>

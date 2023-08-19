@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ludo assignment</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background">
+        <div id="player1">
+            <h1 style="position: absolute; margin-top: -60vh; font-size:4vw">Player 1</h1>
+            <h1 id="onetscore" style="margin-top: -45vh; position: absolute; font-size:3vw">0</h1>
+            <div id="dice-1" class="dice">
+                0
+            </div>
+        </div>
+
+        <div id="player2">
+            <h1  style="position: absolute; margin-top: -60vh; font-size:4vw;">Player 2</h1>
+            <h1 id="twotscore" style="margin-top: -45vh; position: absolute; font-size:3vw">0</h1>
+            <div id="dice-2" class="dice">
+                0
+            </div>
+        </div>
+
+        <div style="position: absolute;">
+            <button id="newgame" class="btn" style="position: absolute; margin-top: 15vh; margin-left: 25vw; ">New Game</button>
+            <img id="imags" src="./assets/1.png">
+            <button id="rolldice" class="btn" style="position: absolute; margin-top: 55vh; margin-left: 25vw">Roll Dice</button>
+            <button id="hold" class="btn" style="position: absolute; margin-top: 72vh; margin-left: 25vw">Hold</button>
+        </div>
+
+        <div id="areyousure" class="hidden">
+
+        </div>
+
+        <div id="workingarea" class="hidden">
+            <h1 id="heading" class="hidden">
+            Are You Sure to Quit that game?</h1>
+            <button id="btn25" class="hidden" onclick="myfuction()">New Game</button> 
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

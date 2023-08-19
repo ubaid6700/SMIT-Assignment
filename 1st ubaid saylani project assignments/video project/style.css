@@ -1,0 +1,132 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    overflow: hidden;
+}
+
+.main{
+    width: 100vw;
+    height: 100vh;
+}
+
+.video{
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    right: 0;
+    object-fit: cover;
+}
+
+.h1{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0,.5);
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 5vw;
+    color: black;
+    font-family: Arial, Helvetica;
+    letter-spacing: 1.5vw;
+}
+
+.rounded{
+    border-radius: .5vw !important;
+}
+
+.btnvideo{
+    position: absolute;
+    bottom: 3vh;
+    left: 5vw;
+    background-color: rgb(205, 243, 255);
+    width: 16vw;
+    height: 5vh;
+    z-index: 3;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.btnvideo div{
+    width: 8vw;
+    text-align: center;
+    cursor: pointer;
+    font-size: 120%;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    color: black;
+}
+
+.btneraser{
+    position: absolute;
+    bottom: 3vh;
+    /* left: 13vw; */
+    left: 5vw;
+    height: 5vh;
+    width: 8vw;
+    background-color: rgb(0, 160, 223);
+    color: rgb(0, 160, 223);
+    padding-left: 1vw;
+    padding-right: 1vw;
+    z-index: 5;
+    transition: .5s ease-in;
+}
+
+.hide-preloader {
+    z-index: -999;
+    visibility: hidden !important;
+}
+
+.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: var(--clr-white);
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    visibility: visible;
+    z-index: 999;
+    transition: var(--transition);
+}
+
+@media screen and (max-width: 628px) {
+    .btnvideo div {
+      font-size: .8rem !important;
+    }
+  }
+  
+  /* styles for screens narrower than 600px */
+  @media screen and (max-width: 400px) {
+    .btnvideo div {
+        font-size: .7rem !important;
+      }
+  }
+  @media screen and (max-width: 350px) {
+    .btnvideo div {
+        font-size: .6rem !important;
+        /* width: 10vw !important; */
+    }
+}
+@media screen and (max-width: 300px) {
+    .btnvideo div {
+        font-size: .6rem !important;
+    }
+}
+@media screen and (max-width: 250px) {
+    .btnvideo div {
+        font-size: .5rem !important;
+        width: 12vw;
+      }
+  }
